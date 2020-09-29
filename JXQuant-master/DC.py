@@ -41,6 +41,7 @@ class data_collect(object):
         self.cnt_pos = 0
         self.test_case = []
 
+
         for i in range(1,len(self.close_list)):
             train = [self.open_list[i-1],self.close_list[i-1],self.high_list[i-1],self.low_list[i-1],self.vol_list[i-1],self.amount_list[i-1]]
             self.data_train.append(np.array(train))

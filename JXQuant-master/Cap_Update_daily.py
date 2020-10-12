@@ -39,5 +39,5 @@ def cap_update_daily(state_dt):
     cursor.execute(sql_insert)
     db.commit()
 
-# test story 666
+# make it as 777,push 777
     return 1

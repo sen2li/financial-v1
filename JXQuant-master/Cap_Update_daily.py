@@ -39,5 +39,5 @@ def cap_update_daily(state_dt):
     cursor.execute(sql_insert)
     db.commit()
 
-# 第四次
+# 第五次
     return 1

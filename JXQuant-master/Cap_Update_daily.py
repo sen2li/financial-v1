@@ -29,6 +29,7 @@ def cap_update_daily(state_dt):
     cursor.execute(sql_cap)
     done_cap = cursor.fetchall()
     db.commit()
+
     # new_cash_cap = my_capital -> money_rest money assert
     new_cash_cap = float(done_cap[-1][2]) * para_norisk
     # new_total_cap = my_capital -> capital  = all assert
@@ -37,4 +38,5 @@ def cap_update_daily(state_dt):
                  %(new_total_cap,new_lock_cap,new_cash_cap,str('Daily_Update'),state_dt)
     cursor.execute(sql_insert)
     db.commit()
+
     return 1
